@@ -1,0 +1,47 @@
+/* ## Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.site-inner {
+	clear: both;
+    padding-top: 40px;
+	word-wrap: break-word;
+}
+
+.featured-section,
+.page {
+    .site-inner {
+        padding-top: 0;
+    }
+}
+.landing-page .site-inner {
+	max-width: 800px;
+}
+
+.front-page,
+.page {
+    .site-container {
+        .site-inner {
+            margin-top: 0;
+            max-width: 100%;
+        }
+    }
+}
+
+.single {
+    .site-container{
+        .site-inner {
+            max-width: 1280px;
+        }
+    }
+    
+    .content {
+        padding: 40px 5%; 
+        background-color: #fff;
+    }
+}

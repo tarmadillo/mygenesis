@@ -1,0 +1,51 @@
+/* ## Global
+--------------------------------------------- */
+
+.desktop-hidden {
+    display: none;
+}
+.heading {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.align-vertically {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.align-horizontally {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.cta {
+    height: 400px;
+}
+
+.cta-text {
+    text-align: center;
+}
+
+.preloader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../mygenesis3/images/loading.gif") 50% 50% no-repeat rgb(249,249,249);
+}
+
+.fixed {
+    position: fixed;
+}

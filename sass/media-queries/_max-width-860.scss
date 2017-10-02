@@ -1,0 +1,101 @@
+@media only screen and (max-width: 860px) {
+
+	body,
+	body > div {
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+    
+    .mobile-hidden {
+        display: none;
+    }
+	.site-inner {
+		padding-top: 40px;
+	}
+
+	.wrap {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.after-entry,
+	.archive-description,
+	.author-box,
+	.comment-respond,
+	.entry-comments,
+	.entry-pings,
+	.sidebar .widget {
+		margin-bottom: 5%;
+	}
+
+	.sidebar {
+		margin-bottom: 5%;
+	}
+
+	.pagination {
+		margin: 5% auto;
+	}
+
+	.archive-pagination li a {
+		margin-bottom: 4px;
+	}
+
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		margin: 0;
+		width: 100%;
+	}
+    
+    .sm-five-sixths,
+    .sm-one-sixth {
+        float: left;
+        margin-left: 3.33333333333%;
+    }
+
+    .sm-one-sixth {
+        width: 15.5555555556%;
+    }
+
+    .sm-five-sixths {
+        width: 77.1111111111%;
+    }
+    
+    .front-page-2 {
+        .white-section {
+            padding-bottom: 100px;
+        }
+    }
+    .front-page-3 {
+        .image-tablet {
+            position: relative;
+            width: 50%;
+            margin-top: -200px;
+            margin-bottom: -50px;
+        }
+        .image-coffee-tablet {
+            position: relative;
+            margin-top: 60px;
+            margin-bottom: -300px;
+            margin-bottom: -70%;
+            width: 100%;
+        }
+    }
+    
+    .front-page-6 {
+        .featuredpost {
+            .post {
+                width: 100%;
+                margin: 0 auto 20px;
+            }
+        }
+    }
+}

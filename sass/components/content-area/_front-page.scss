@@ -1,0 +1,138 @@
+/* ## Front Page
+--------------------------------------------- */
+
+.front-page strong {
+    color: #f69736;
+}
+
+.white-section {
+    background-color: #eee;
+}
+
+.blue-section {
+    background-color: #3e427b;
+    color: #eee;
+}
+
+.white-section,
+.blue-section {
+    padding-top: 60px;
+    padding-bottom: 160px;
+}
+
+.image-section {
+    height: 900px;
+    height: 90vh;
+    text-align: center;
+    color: #eee;
+}
+
+.front-page-1,
+.front-page-2,
+.front-page-3,
+.front-page-4,
+.front-page-5,
+.front-page-6,
+.front-page-7 {
+    outline: none;
+    background-clip: padding-box;
+	position: relative;
+	z-index: 9;
+    overflow: hidden;
+}
+
+.front-page-1 {
+    background: url("../mygenesis3/images/code.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.front-page-2 {
+    .hands-image {
+        position: absolute;
+        transform: rotate(-45deg);
+        right: -10%;
+        width: 50%;
+    }
+    .logo {
+        width: 50%;
+    }
+}
+
+.front-page-3 {
+    .image-tablet {
+        position: absolute;
+        left: -7%;
+        top: -20%;
+        width: 29%;
+    }
+    .image-coffee-tablet {
+        position: absolute;
+        right: -10%;
+        top: 12%;
+        width: 50%;
+    }
+}
+
+.front-page-4 {
+    .blurb {
+        padding-bottom: 60px;
+    }
+    .coffee-beans {
+        position: absolute;
+        bottom: 0%;
+        right: 0;
+    }
+}
+
+.front-page-5 {
+    text-align: center;
+    .blue-section {
+        padding-bottom: 60px;
+    }
+    .button {
+        position: relative;
+        top: -8px;
+    }
+}
+
+.front-page-6 {
+    .widget {
+        &:nth-of-type(1) {
+            background: none;
+            margin-left: 0;
+            padding: 0;
+            width: 100%;
+        }
+        &:nth-child(3n+2) {
+            margin-left: 0;
+        }
+    }
+    .featuredpost {
+        .post {
+            width: 31.623931623931625%;
+            margin: 0 0 40px 2.564102564102564%;
+            float: left;
+            &:nth-of-type(1) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.front-page-7 {
+    background: url("../mygenesis3/images/bridge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .widget-area {
+        position: relative;
+        top:50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+}

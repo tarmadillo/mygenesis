@@ -1,0 +1,27 @@
+@media only screen and (max-width: 480px) {
+    
+    .phone-hidden {
+        display: none;
+    }
+    
+    .desktop-hidden {
+        display: block;
+    }
+    .front-page-3 {
+        .image-tablet {
+            display: none;
+        }
+        .image-coffee-tablet {
+            margin-bottom: -350px;
+        }
+    }
+    
+    .single {
+        .site-container{
+            .site-inner {
+                max-width: 1080px;
+                padding: 40px 5%;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.featured-section .site-header {
+    background-color: transparent;
+}
+
+.site-header {
+	background-color: #111111;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all .2s ease-in-out;
+    &.dark {
+        background-color: #111111;
+        transition: all .2s ease-in-out;
+        > .wrap {
+            border-color: transparent;
+            padding: 0;
+        }
+    }
+}
+
+.site-header > .wrap {
+    border-bottom: 1px solid #eee;
+    transition: all .2s ease-in-out;
+}
+
+.header-image .site-header.dark .site-title > a {
+	min-height: 60px;
+}
