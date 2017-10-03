@@ -195,4 +195,12 @@
     .blog-heading {
         margin-top: 0;
     }
+    
+    .blog {
+        .content {
+            .entry {
+                width: calc(50% - 30px);
+            }
+        }
+    }
 }

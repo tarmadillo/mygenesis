@@ -11,10 +11,11 @@
  * @license GPL-2.0+
  * @link    http://www.studiopress.com/
  */
+namespace TonyArmadillo\Armadillo;
 
 // Add landing page body class to the head.
-add_filter( 'body_class', 'genesis_sample_add_body_class' );
-function genesis_sample_add_body_class( $classes ) {
+add_filter( 'body_class', __NAMESPACE__ . '\add_body_class' );
+function add_body_class( $classes ) {
 
 	$classes[] = 'landing-page';
 
@@ -26,8 +27,8 @@ function genesis_sample_add_body_class( $classes ) {
 remove_action ( 'genesis_before_header', 'genesis_skip_links', 5 );
 
 // Dequeue Skip Links Script.
-add_action( 'wp_enqueue_scripts', 'genesis_sample_dequeue_skip_links' );
-function genesis_sample_dequeue_skip_links() {
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\dequeue_skip_links' );
+function dequeue_skip_links() {
 	wp_dequeue_script( 'skip-links' );
 }
 

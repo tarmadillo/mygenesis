@@ -52,8 +52,33 @@
 	margin-bottom: 0;
 }
 
-.header-image .site-description,
-.header-image .site-title {
-	display: block;
-	text-indent: -9999px;
+.wp-custom-logo .site-title,
+.wp-custom-logo .site-description {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.wp-custom-logo {
+    .title-area {
+        padding: 0;
+        margin: 0;
+        height: 87px;
+        width: 300px;
+        @include transition;
+    }
+    .custom-logo-link {
+        display: block;
+        height: 100%;
+        img {
+            width: auto;
+            height: 100%;
+            margin: 0 auto;
+            vertical-align: middle;
+            display: block;
+        }
+    }
 }

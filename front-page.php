@@ -1,22 +1,26 @@
 <?php
 /**
- * Altitude Pro.
+ * Armadillo Web Design.
  *
- * This file adds the front page to the Altitude Pro Theme.
+ * This file adds the front page.
  *
- * @package Altitude
- * @author  StudioPress
+ * @package Armadillo Web Design
+ * @author  Tony Armadillo
  * @license GPL-2.0+
- * @link    http://my.studiopress.com/themes/altitude/
+ * @link    http://www.armadillowebdesign.com/
  */
+namespace TonyArmadillo\Armadillo;
 
-add_action( 'genesis_meta', 'altitude_front_page_genesis_meta' );
+// Remove hero.
+remove_action( 'genesis_after_header', __NAMESPACE__ . '\hero', 99 );
+
+add_action( 'genesis_meta', __NAMESPACE__ . '\front_page_genesis_meta' );
 /**
  * Add widget support for homepage. If no widgets active, display the default loop.
  *
  * @since 1.0.0
  */
-function altitude_front_page_genesis_meta() {
+function front_page_genesis_meta() {
 
 	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) || is_active_sidebar( 'front-page-6' ) || is_active_sidebar( 'front-page-7' ) ) {
 
@@ -24,7 +28,7 @@ function altitude_front_page_genesis_meta() {
 		//add_action( 'wp_enqueue_scripts', 'ta_enqueue_front_script' );
 
 		// Add front-page body class.
-		add_filter( 'body_class', 'ta_body_class' );
+		add_filter( 'body_class', __NAMESPACE__ . '\body_class' );
 
 		// Force full width content layout.
 		add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
@@ -36,13 +40,13 @@ function altitude_front_page_genesis_meta() {
 		remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 		// Add homepage widgets.
-		add_action( 'genesis_loop', 'ta_front_page_widgets' );
+		add_action( 'genesis_loop', __NAMESPACE__ . '\front_page_widgets' );
 
 		// Add featured-section body class.
 		if ( is_active_sidebar( 'front-page-1' ) ) {
 
 			// Add image-section-start body class.
-			add_filter( 'body_class', 'ta_featured_body_class' );
+			add_filter( 'body_class', __NAMESPACE__ . '\featured_body_class' );
 
 		}
 
@@ -59,14 +63,13 @@ function altitude_front_page_genesis_meta() {
  *
  * @return void
  */
-function ta_body_class( $classes ) {
+function body_class( $classes ) {
 
 	$classes[] = 'front-page';
 
 	return $classes;
 
 }
-
 
 /**
  * // Define featured-section body class.
@@ -75,14 +78,13 @@ function ta_body_class( $classes ) {
  *
  * @return void
  */
-function ta_featured_body_class( $classes ) {
+function featured_body_class( $classes ) {
 
 	$classes[] = 'featured-section';
 
 	return $classes;
 
 }
-
 
 /**
  * // Add markup for front page widgets.
@@ -91,7 +93,7 @@ function ta_featured_body_class( $classes ) {
  *
  * @return void
  */
-function ta_front_page_widgets() {
+function front_page_widgets() {
 
 	echo '<h2 class="screen-reader-text">' . __( 'Main Content', CHILD_TEXT_DOMAIN ) . '</h2>';
 

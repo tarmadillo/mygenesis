@@ -1,11 +1,11 @@
 /*
-	Theme Name: My Genesis 3
+	Theme Name: Armadillo Web Design
 	Theme URI: 
 	Description: This is developer's sample theme created for the Genesis Framework.
 	Author: Tony Armadillo
 	Author URI: 
 
-	Version: 2.3.3
+	Version: 1.1
 
 	Tags: black, red, white, one-column, two-columns, three-columns, left-sidebar, right-sidebar, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
@@ -15,7 +15,7 @@
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-	Text Domain: mygenesis3
+	Text Domain: armadillo
 */
 
 
@@ -75,6 +75,7 @@
 @import 'bourbon';
 @import 'neat';
 @import '../node_modules/sass-rem/rem';
+@import 'utilities/index';
 @import 'html5-reset/index';
 @import 'defaults/index';
 @import 'structure-layout/index';

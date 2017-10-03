@@ -69,6 +69,19 @@
         width: 77.1111111111%;
     }
     
+    .blog,
+    .portfolio {
+        .site-inner {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        .content {
+            .entry {
+                width: 100%;
+            }
+        }
+    }
+    
     .front-page-2 {
         .white-section {
             padding-bottom: 100px;
