@@ -250,6 +250,18 @@ function comments_gravatar( $args ) {
 
 }
 
+add_action( 'genesis_before_entry', __NAMESPACE__ . '\featured_post_image', 8 );
+/**
+ * Code to Display Featured Image on top of the post
+ *
+ * @author Tony Armadillo
+ *    
+ */
+function featured_post_image() {
+  if ( ! is_singular( 'post' ) )  return;
+	the_post_thumbnail('featured-image');
+}
+
 // Register widget areas.
 genesis_register_sidebar( array(
 	'id'          => 'front-page-1',
