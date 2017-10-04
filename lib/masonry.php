@@ -124,7 +124,6 @@ function masonry_layout() {
             $exclude = genesis_get_option( 'blog_cat_exclude' ) ? explode( ',', str_replace( ' ', '', genesis_get_option( 'blog_cat_exclude' ) ) ) : '';
             $paged   = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
 
-            // Easter Egg.
             $query_args = wp_parse_args(
                 genesis_get_custom_field( 'query_args' ),
                 array(
@@ -135,6 +134,7 @@ function masonry_layout() {
                 )
             );
             genesis_custom_loop( $query_args );
+            wp_reset_query();
         }
         add_action( 'genesis_loop',  __NAMESPACE__ . '\blog_masonry_loop' );
         remove_action( 'genesis_loop', 'genesis_do_loop' );

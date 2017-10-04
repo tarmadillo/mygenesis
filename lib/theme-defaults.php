@@ -54,6 +54,6 @@ function theme_setting_defaults() {
 
 	}
 
-	update_option( 'posts_per_page', 6 );
+	update_option( 'posts_per_page', 12 );
 
 }

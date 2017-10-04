@@ -1,7 +1,9 @@
 /* ## Float Clearing
 --------------------------------------------- */
 
+section::before,
 .author-box::before,
+.align-vertically::before,
 .clearfix::before,
 .entry::before,
 .entry-content::before,
@@ -19,7 +21,9 @@
 	display: table;
 }
 
+section::after,
 .author-box::after,
+.align-vertically::after,
 .clearfix::after,
 .entry::after,
 .entry-content::after,

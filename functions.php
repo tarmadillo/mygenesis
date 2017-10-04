@@ -82,8 +82,6 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_scripts_styles' );
 function enqueue_scripts_styles() {
     
     wp_enqueue_script( 'global', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), '1.0.0' );
-
-    wp_enqueue_script( 'preload', get_stylesheet_directory_uri() . '/js/preload.js', array( 'jquery' ), '1.0.0' );
     
 	wp_enqueue_style( CHILD_TEXT_DOMAIN . '-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro|Ek+Mukta|Patua+One|Lora:200,400,600,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
